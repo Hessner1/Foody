@@ -46,7 +46,6 @@ No account needed. No ads. Your data stays on your device unless *you* decide to
 | 🔢 **Nutrition & scores** | Calories, proteins, fats, carbs, Nutri‑Score and NOVA group. |
 | 📔 **Food diary & calorie goals** | Log portions and track your day. |
 | 🍳 **Dish / recipe builder** | Combine scanned ingredients into a dish with exact per‑portion nutrition. |
-| 📱 **Offline‑first** | Everything works on‑device; the cloud is optional. |
 | ☁️ **Optional sync** | Sign in to back up and sync your profile, diary and dishes — and delete it all anytime. |
 | 🌍 **Multilingual** | Ukrainian, English and Russian. |
 
