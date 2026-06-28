@@ -19,9 +19,10 @@
 
 > **In one breath:** You can use the whole app **without an account**. There are
 > **no ads, no trackers, no advertising ID, no third‑party analytics**. By default
-> everything you enter lives **on your device**. The camera reads a barcode and
-> nothing else. Sign‑in is optional and only backs up your own data — which you can
-> delete at any time.
+> everything you enter lives **on your device**. The camera reads barcodes on‑device;
+> images leave your phone only if you **choose** to send a product photo to help add
+> it. Sign‑in is optional and only backs up your own data — which you can delete at
+> any time.
 
 ---
 
@@ -33,7 +34,7 @@
 | 📵 **Tracking** | No ads, no analytics SDKs, no advertising ID, no trackers. |
 | 📱 **Storage** | Diary, dishes, allergens, diets, calorie goal, language, region and scan history are stored **on your device** by default. |
 | ☁️ **Cloud (only if you sign in)** | Profile, diary and dishes are backed up to a **private** space tied to your account, for restore & sync. |
-| 📷 **Camera** | Used **only** to read a barcode. Frames are processed on‑device and **never stored or uploaded**. |
+| 📷 **Camera** | Reads barcodes **on‑device** (frames never uploaded). Optionally lets you photograph a *not‑found* product to send to us — only if you choose to. |
 | 🗑️ **Deletion** | Delete your account and **all** cloud data anytime — in the app or from a web page. |
 
 ---
@@ -41,9 +42,11 @@
 ## 🧭 What data the app handles
 
 ### 📷 1. Camera
-The app requests camera access solely to detect a product barcode in real time.
-Frames are analysed **on‑device** by the operating system's barcode scanner. The
-app does **not** take, save, or transmit photos or video.
+The app uses the camera to detect a product barcode in real time. These live
+scanning frames are analysed **on‑device** by the operating system's barcode
+scanner and are **never saved or transmitted**. Separately, the camera (or your
+gallery) powers the optional **"help add a product"** action in section 5 — and
+only the photos you explicitly submit there ever leave your device.
 
 ### 🔢 2. The barcode you scan
 When you scan or type a barcode, the app sends that **number** to our product‑lookup
@@ -68,16 +71,32 @@ it can be restored and kept in sync across your devices.
 - 🔒 This data is readable and writable **only by you** (enforced by per‑user security rules).
 - 🏢 It is processed by Google Firebase as our data processor → <https://policies.google.com/privacy>
 - 🚫 We do **not** use this data for advertising, profiling, or analytics.
-- 📷 Camera frames and full scan history are **not** uploaded — only the profile, diary and dishes described above.
+- 📷 Live camera frames and full scan history are **not** uploaded — only the profile, diary and dishes described above (plus any product photos you choose to submit under section 5).
+
+### ➕ 5. Optional product photos ("help add a product")
+When a scan returns **"not found"**, you can **optionally** take or pick **up to two
+photos** of the product and submit them so we can add it to the database. Nothing is
+sent unless you tap **Send**. When you do:
+
+- 🔐 The photos are uploaded over **HTTPS** to our backend, which **forwards them to
+  the developer's private messaging (Telegram)** solely to add the missing product.
+- 🏷️ A short **sender label** is included so we can follow up — your display name or
+  email **if signed in**, otherwise an anonymous identifier.
+- 🗄️ The photos are **not stored** on our servers or in any database — they exist only
+  in the forwarded message.
 
 ---
 
 ## 🤝 Data sharing
 
-We do **not** sell, rent, or share your data with anyone. The app contains **no**
-advertising or analytics SDKs. The only third parties involved are the product‑lookup
-source (**Open Food Facts**) and, if you sign in, **Google Firebase** as the
-backup/sync provider described above.
+We do **not** sell or rent your data, and the app contains **no** advertising or
+analytics SDKs. We share data only in these limited cases:
+
+- the **barcode** you scan → the product‑lookup source (**Open Food Facts**);
+- **if you sign in** → **Google Firebase** processes your profile/diary/dishes for backup & sync (not for ads or analytics);
+- **any product photos you choose to submit** → forwarded to the developer (section 5).
+
+There are no other recipients.
 
 ---
 
