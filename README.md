@@ -46,6 +46,7 @@ No account needed. No ads. Your data stays on your device unless *you* decide to
 | 🔢 **Nutrition & scores** | Calories, proteins, fats, carbs, Nutri‑Score and NOVA group. |
 | 📔 **Food diary & calorie goals** | Log portions and track your day. |
 | 🍳 **Dish / recipe builder** | Combine scanned ingredients into a dish with exact per‑portion nutrition. |
+| 📱 **Offline‑first** | Everything works on‑device; the cloud is optional. |
 | ☁️ **Optional sync** | Sign in to back up and sync your profile, diary and dishes — and delete it all anytime. |
 | 🌍 **Multilingual** | Ukrainian, English and Russian. |
 
@@ -64,13 +65,14 @@ No account needed. No ads. Your data stays on your device unless *you* decide to
 
 ## 📊 Data sources
 
-Product information (names, ingredients, nutrition, images) comes from
-**[Open Food Facts](https://world.openfoodfacts.org)** — an open, crowdsourced food
-database.
+Product information (names, ingredients, nutrition, images) comes primarily from
+**Foody's own product database**, which we build and maintain, and is
+**supplemented by [Open Food Facts](https://world.openfoodfacts.org)** — an open,
+crowdsourced food database — to fill in products we don't yet cover.
 
-> Product data © Open Food Facts contributors, licensed under the
-> **Open Database License (ODbL) v1.0**. Individual contents (e.g. photos) may be
-> under CC‑BY‑SA.
+> Where Open Food Facts data is used: product data © Open Food Facts contributors,
+> licensed under the **Open Database License (ODbL) v1.0**. Individual contents
+> (e.g. photos) may be under CC‑BY‑SA.
 
 Optional account backup & sync are powered by **Google Firebase** (Authentication +
 Cloud Firestore), used purely for *your* data — never for ads, profiling or analytics.
