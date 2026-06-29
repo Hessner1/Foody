@@ -49,12 +49,16 @@ gallery) powers the optional **"help add a product"** action in section 5 — an
 only the photos you explicitly submit there ever leave your device.
 
 ### 🔢 2. The barcode you scan
-When you scan or type a barcode, the app sends that **number** to our product‑lookup
-service, which returns the product's name, ingredients and nutrition (sourced from
-the open **Open Food Facts** database) over an encrypted **HTTPS** connection. The
-barcode is not linked to your identity and carries no personal information.
+When you scan or type a barcode, the app sends that **number** over an encrypted
+**HTTPS** connection to our product‑lookup service and receives back the product's
+name, ingredients and nutrition. The barcode is not linked to your identity and
+carries no personal information.
 
-> Open Food Facts' own terms apply to product data → <https://world.openfoodfacts.org/privacy>
+Product information comes primarily from **Foody's own product database**, which we
+build and maintain, and is **supplemented by the open Open Food Facts database** to
+fill in products we don't yet cover.
+
+> Where Open Food Facts data is used, its own terms apply → <https://world.openfoodfacts.org/privacy>
 
 ### ✍️ 3. Information you create in the app
 Your food diary, saved dishes/recipes, allergen & diet selections, calorie goal,
@@ -92,7 +96,7 @@ sent unless you tap **Send**. When you do:
 We do **not** sell or rent your data, and the app contains **no** advertising or
 analytics SDKs. We share data only in these limited cases:
 
-- the **barcode** you scan → the product‑lookup source (**Open Food Facts**);
+- the **barcode** you scan → our product‑lookup service (**Foody's own database**, supplemented by **Open Food Facts**);
 - **if you sign in** → **Google Firebase** processes your profile/diary/dishes for backup & sync (not for ads or analytics);
 - **any product photos you choose to submit** → forwarded to the developer (section 5).
 
